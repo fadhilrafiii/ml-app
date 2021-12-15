@@ -9,7 +9,7 @@ def sidebar():
   st.sidebar.title('Menu')
   selected_menu = st.sidebar.selectbox('Choose Menu', menu)
   st.sidebar.text('')
-  st.sidebar.title('Options')
-  checkboxes = [st.sidebar.checkbox(cb, key=cb) for cb in checkbox_sidebar]
+  # st.sidebar.title('Options')
+  # checkboxes = [st.sidebar.checkbox(cb, key=cb) for cb in checkbox_sidebar]
 
-  return selected_menu, checkboxes
+  return selected_menu

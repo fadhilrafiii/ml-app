@@ -12,11 +12,10 @@ from components.sidebar import sidebar
 page_container = st.container()
 
 with page_container:
-  selected_menu, checboxes_opt = sidebar()
+  selected_menu = sidebar()
 
-  if (selected_menu == "My Data"):
-    my_data_page()
-  elif (selected_menu == "Input Data"):
+  if (selected_menu == "Input Data"):
     input_data_page()
-  else:
-    prediction_page()
+    col1, col2, col3, col4, col5, col6 = st.columns([7,7,7,7,7,8])
+    with col6:
+      st.button("Predict Data")
