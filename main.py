@@ -36,7 +36,7 @@ with page_container:
           st.error('You are NOT ELIGIBLE to take the credit')
       except Exception as e:
         print(str(e))
-        st.warning('Predict failed!')
+        st.warning(f'Predict Failed, {str(e)}')
       # y_pred = clf.predict([data_test])
       # print(y_pred)
     st.button("Predict Data", on_click=predict)
