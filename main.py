@@ -39,4 +39,5 @@ with page_container:
         st.warning(f'Predict Failed, {str(e)}')
       # y_pred = clf.predict([data_test])
       # print(y_pred)
+    st.title('')
     st.button("Predict Data", on_click=predict)
