@@ -3,9 +3,13 @@ import streamlit as st
 
 # Import Constants
 from constants.menu import menu
-from constants.checkbox_sidebar import checkbox_sidebar
 
 def sidebar():
+  col1, col2, col3 = st.sidebar.columns([1,5,1])
+  with col2:
+    col2.image('public/images/home-credit.jpg', width=200, use_column_width=True)
+ 
+  st.sidebar.title('')
   st.sidebar.title('Menu')
   selected_menu = st.sidebar.selectbox('Choose Menu', menu)
   st.sidebar.text('')

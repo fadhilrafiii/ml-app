@@ -1,1 +1,1 @@
-menu = ['Input Data']
+menu = ['Predict Data']
